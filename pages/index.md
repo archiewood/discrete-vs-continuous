@@ -265,5 +265,3 @@ Use heatmaps if you need to:
 - Highlight density and intensity, such as sales or user activity
 - Track geospatial trends, such as weather or population density
 - Examine time-based data patterns, e.g., hourly website visits
-
-
