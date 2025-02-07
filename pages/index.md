@@ -4,16 +4,9 @@ title: Discrete vs Continuous Data
 
 ## Continuous Data
 
-- Which products are frequently purchased together so you can optimize cross-selling strategies?
-- How various demographic factors affect purchasing patterns so you can optimize your PPC campaigns?
-
-When a data analytics platform performs correlation analysis, it measures the strength and direction of the relationship between two variables. Correlation analysis will show whether a pair of variables move together positively, negatively, or have little to no linear relationship.
-
-
-
 ### Scatter chart example
 
-The scatter chart is a type of graph that displays values as individual points plotted along two numerical axes (X and Y). In this particular case, it displays .
+The scatter chart is a type of graph that displays values as individual points plotted along two numerical axes (X and Y). 
 
 
 ```sql daily_stats
@@ -69,7 +62,7 @@ Use scatter charts if you need to:
 
 ### Line chart example
 
-The line chart is a type of graph that represents data points connected by lines, typically to show trends over time. In this case, 
+The line chart is a type of graph that represents data points connected by lines, typically to show trends over time. 
 
 Use line charts if you need to:
 
@@ -100,11 +93,6 @@ order by 1
 
 
 ### Distribution analysis
-
-Distribution analysis helps answer questions like:
-
-- What are the slow-moving and fast-moving goods so you can optimize the inventory?
-- How do sales distribute across categories so you can identify top-performing and under-performing product lines?
 
 Distribution analysis examines how data points are spread across different values. This helps reveal patterns of frequency and variation.
 
@@ -153,7 +141,7 @@ order by median desc
 
 ### Box plot example
 
-The box plots display the distribution, variability, and outliers of a dataset. They don't work on raw data. Instead, they require pre-aggregation — building statistical summaries from the original data points. In the example above, we created 
+The box plots display the distribution, variability, and outliers of a dataset. 
 
 Use box plots if you need to:
 
@@ -166,16 +154,12 @@ Use box plots if you need to:
 
 Time series data analysis helps answer questions like:
 
-- What are the seasonal bestsellers year over year so you can optimize your inventory?
-- What is the long-term trend for the customer acquisition cost so you can optimize your lead generation efforts?
-
 Time series data analysis involves examining data points collected over time to discover patterns, trends, and relationships that can help predict future values.
 
-Trends and forecasts are typically plotted with either line charts or area charts. Here is an example of an area chart:
 
 ### Area chart example
 
-The area charts are a variation of a line chart where the area beneath the line is shaded to visualize cumulative values and emphasize volume or magnitude changes. In this case, we plot 
+The area charts are a variation of a line chart where the area beneath the line is shaded to visualize cumulative values and emphasize volume or magnitude changes. 
 
 ```sql items_over_time
 select 
@@ -199,8 +183,6 @@ order by sales desc
 
 
 
-
-
 Use area charts if you need to:
 
 - Track trends over time while emphasizing volume
@@ -210,16 +192,10 @@ Use area charts if you need to:
 
 ## Discrete Data
 
-Frequency distribution is one of the most common analysis methods for discrete data. It helps answer questions like:
-
-- How do you segment customers based on their purchase frequency (e.g., daily, weekly, or monthly) so you can offer them loyalty programs?
-- How often do customers buy certain items so you can offer them personalized discounts?
-
-Frequency distribution analysis organizes data into categories or intervals to show how often each value occurs. Frequency distribution is often plotted with bar charts. Let's take a look at the example below:
 
 ### Bar chart example
 
-The bar charts display categorical or numerical data using rectangular bars. They are very useful for plotting data that is divided into distinct categories, such as product types and customer segments (e.g., age groups). Here, we 
+The bar charts display categorical or numerical data using rectangular bars. They are very useful for plotting data that is divided into distinct categories, such as product types and customer segments (e.g., age groups). 
 
 ```sql bar_data
 select
@@ -258,7 +234,7 @@ Correlation analysis applies to discrete data as well. You can plot the results 
 
 ### Heatmap example
 
-The heatmap chart is a 2D matrix with color coding: lighter/paler colors are for pairs with weaker correlation, while darker, more saturated colors are for pairs with stronger correlation. Here, we 
+The heatmap chart is a 2D matrix with color coding: lighter/paler colors are for pairs with weaker correlation, while darker, more saturated colors are for pairs with stronger correlation. 
 
 ```sql heatmap_chart
 select
@@ -280,8 +256,6 @@ order by 1,4 desc
     valueFmt=num0
     chartAreaHeight=300
 />
-
-
 
 
 
